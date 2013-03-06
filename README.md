@@ -17,6 +17,7 @@ dataset. It is the list of urban areas that contain one or more
 airports. Those airports are then used to _name_ the urban areas that contain
 them. For example urban area #4818 contains the following airports:
 
+	urbanarea_id,iata_code,gps_code,airport_name
 	4818,LGA,KLGA,LaGuardia
 	4818,JFK,KJFK,John F Kennedy Int'l
 
@@ -28,14 +29,13 @@ hyphenated.
 
 Currently the list is compiled using the Natural Earth airports data (891
 airports) but will eventually use the [whereonearth-airports](https://github.com/straup/whereonearth-airport) list (16079
-airports).
-
-Each new "aerotropolis" will be assigned a (64-bit) WOE ID using an [artisanal
+airports). Each new "aerotropolis" will be assigned a (64-bit) WOE ID using an [artisanal
 integer provider](http://www.brooklynintegers.com/) and assigned a WOE hierarchy
 (region, country, etc.).
 
-As of this writing there are no ESRI shape or GeoJSON files but there is a CSV
-file containing the parent-child relationships.
+As of this writing there are no ESRI shape or GeoJSON files but there is a [CSV
+file](https://github.com/straup/whereonearth-aerotropolis/blob/master/aerotropolis.csv)
+containing the list of parent-child relationships.
 
 Caveats
 --
