@@ -15,13 +15,17 @@ research on airport-driven economic development."_ –– [Wikipedia](https://en
 areas](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 dataset. It is the list of urban areas that contain one or more
 airports. Those airports are then used to _name_ the urban areas that contain
-them. For example urban area #4818 contains the following airports:
+them. For example given the following airports:
 
 	urbanarea_id,iata_code,gps_code,airport_name
+	2541,SFO,KSFO,San Francisco Int'l
+	2541,SJC,KSJC,San Jose Int'l
+	2541,OAK,KOAK,Oakland Int'l
+	...
 	4818,LGA,KLGA,LaGuardia
 	4818,JFK,KJFK,John F Kennedy Int'l
 
-This means that urban area #4818 would be named `JFK-LGA`, assuming that 3-letter airport codes are used 
+Urban area #4818 would be named `JFK-LGA` and urban area #2541 would be `OAK-SFO-SJC`, assuming that 3-letter airport codes are used 
 instead of 4-letter codes. It's sort of academic as one can serve as an exonym
 for the other; likewise with nearby cities for each airport. Either way, all the
 airport codes contained by an urban area are sorted alphabetically and then
