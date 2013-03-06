@@ -11,13 +11,11 @@ of Popular Science. The term was revived and substantially extended by
 academic and air commerce expert Dr. John D. Kasarda in 2000, based on his prior
 research on airport-driven economic development."_ –– [Wikipedia](https://en.wikipedia.org/wiki/Aerotropolis)
 
-`whereonearth-aerotropolis` is a sunset of the [Natural Earth urban
+`whereonearth-aerotropolis` is a subset of the [Natural Earth urban
 areas](http://www.naturalearthdata.com/downloads/10m-cultural-vectors/)
 dataset. It is the list of urban areas that contain one or more
 airports. Those airports are then used to _name_ the urban areas that contain
-them.
-
-For example urban area #4818 contains the following airports:
+them. For example urban area #4818 contains the following airports:
 
 	4818,LGA,KLGA,LaGuardia
 	4818,JFK,KJFK,John F Kennedy Int'l
