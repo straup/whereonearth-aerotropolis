@@ -31,15 +31,28 @@ for the other; likewise with nearby cities for each airport. Either way, all the
 airport codes contained by an urban area are sorted alphabetically and then
 hyphenated.
 
-Currently the list is compiled using the Natural Earth airports data (891
-airports) but will eventually use the [whereonearth-airports](https://github.com/straup/whereonearth-airport) list (16079
-airports). Each new "aerotropolis" will be assigned a (64-bit) WOE ID using an [artisanal
+Natural Earth data contains 891 airports.  The
+[whereonearth-airports](https://github.com/straup/whereonearth-airport) dataset
+contains 16079 airports in total and 1128 airports with matching IATA
+codes. It's not that the other 15, 000 airports don't have IATA codes (although
+some don't) but rather that I haven't completed the mapping.
+
+Natural Earth airports take precedence when naming urban areas. For example, the
+name of urban area #2541 is `OAK-SFO-SJC` rather than
+`HWD-JCE-NUQ-OAK-PAO-SFO-SJC-SQL` (which is the set of airports defined in WOE
+and contained by that urban area).
+
+As of this writing there are 973 aerotropolii.
+
+Each new "aerotropolis" will be assigned a (64-bit) WOE ID using an [artisanal
 integer provider](http://www.brooklynintegers.com/) and assigned a WOE hierarchy
 (region, country, etc.).
 
-As of this writing there are no ESRI shape or GeoJSON files but there is a [CSV
-file](https://github.com/straup/whereonearth-aerotropolis/blob/master/aerotropolis.csv)
-containing the list of parent-child relationships.
+As of this writing there are no draft quality (ESRI) shapefiles in the `data`
+directory. There are also CSV files mapping the various parent-child
+relationships and the rulesets for naming them.
+
+Sample images can be seen at: http://www.flickr.com/photos/straup/tags/aerotropolis/
 
 Caveats
 --
