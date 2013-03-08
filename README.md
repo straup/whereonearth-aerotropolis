@@ -34,7 +34,7 @@ hyphenated.
 Natural Earth data contains 891 airports.  The
 [whereonearth-airports](https://github.com/straup/whereonearth-airport) dataset
 contains 16079 airports in total and 1128 airports with matching IATA
-codes. It's not that the other 15, 000 airports don't have IATA codes (although
+codes (many of which overlap with NE). It's not that the other 15, 000 airports don't have IATA codes (although
 some don't) but rather that I haven't completed the mapping.
 
 Natural Earth airports take precedence when naming urban areas. For example, the
