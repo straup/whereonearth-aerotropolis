@@ -48,7 +48,7 @@ Each new "aerotropolis" will be assigned a (64-bit) WOE ID using an [artisanal
 integer provider](http://www.brooklynintegers.com/) and assigned a WOE hierarchy
 (region, country, etc.).
 
-As of this writing there are no draft quality (ESRI) shapefiles in the `data`
+As of this writing there are draft quality (ESRI) shapefiles in the `data`
 directory. There are also CSV files mapping the various parent-child
 relationships and the rulesets for naming them.
 
