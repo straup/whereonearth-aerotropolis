@@ -45,6 +45,7 @@ if __name__ == '__main__':
         p = shapely.geometry.asShape(p)
         bbox = p.bounds
 
+        f['type'] = 'Feature'
         f['properties'] = props
         f['bbox'] = bbox
         f['id'] = props['woe_id']
