@@ -31,7 +31,7 @@ if __name__ == '__main__':
         for k,v in f['properties'].items():
             k = k.lower()
 
-            if k == 'woeid':
+            if k == 'woe_id':
                 v = int(v)
             elif k == 'airports':
                 v = v.replace('{', '')
@@ -47,7 +47,12 @@ if __name__ == '__main__':
 
         f['properties'] = props
         f['bbox'] = bbox
-        f['id'] = props['woeid']
+        f['id'] = props['woe_id']
+
+        geojson = {
+            'type': 'FeatureCollection',
+            'features': [ f ]
+            }
 
         tree = utils.woeid2path(f['id'])
         fname = "%s.json" % f['id']
@@ -61,5 +66,5 @@ if __name__ == '__main__':
         fh = open(path, 'w')
         indent = None
 
-        utils.write_json(f, fh, indent)
+        utils.write_json(geojson, fh, indent)
         print path
