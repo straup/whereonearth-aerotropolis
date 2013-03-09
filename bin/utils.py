@@ -3,6 +3,10 @@ import re
 
 def write_json(data, out, indent=2): 
 
+    # This no longer does what it's supposed because
+    # some random Python reason. Please for the bug
+    # fixes... (20130309/straup)
+
     encoded = json.JSONEncoder(indent=indent)
     encoded = encoded.iterencode(data)
 
