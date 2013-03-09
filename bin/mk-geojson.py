@@ -16,7 +16,7 @@ if __name__ == '__main__':
     rootdir = os.path.dirname(bindir)
 
     datadir = os.path.join(rootdir, 'data')
-    jsondir = os.path.join(rootdir, 'geojson')
+    jsondir = os.path.join(datadir, 'geojson')
 
     if not os.path.exists(jsondir):
         os.makedirs(jsondir)
