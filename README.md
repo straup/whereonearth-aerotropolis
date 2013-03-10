@@ -42,16 +42,16 @@ name of urban area #2541 is `OAK-SFO-SJC` rather than
 `HWD-JCE-NUQ-OAK-PAO-SFO-SJC-SQL` (which is the set of airports defined in WOE
 and contained by that urban area).
 
-As of this writing there are 973 aerotropolii.
+As of this writing there are 974 aerotropolii.
 
 Each new "aerotropolis" has been assigned a (64-bit) WOE ID using an [artisanal
 integer provider](http://www.brooklynintegers.com/) and will eventually be
 assigned a WOE hierarchy (region, country, etc.).
 
 As of this writing there are draft quality (ESRI) shapefiles in the `data`
-directory. There are also CSV files mapping the various parent-child
-relationships and the rulesets for naming them.
-
+directory. There are also (sometimes incomplete) reference CSV files for
+aerotropolii and airports in the `reference` directory.
+ 
 Sample images can be seen at: http://www.flickr.com/photos/straup/tags/aerotropolis/
 
 Caveats
