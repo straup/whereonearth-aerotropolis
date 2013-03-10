@@ -1,3 +1,4 @@
 *~
 *.pyc
 sandbox
+.DS_Store
